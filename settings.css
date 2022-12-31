@@ -1,0 +1,92 @@
+body {
+  background-color: #040308;
+  color: white;
+}
+
+.title {
+  text-align: center;
+  margin: 3rem;
+}
+
+.input-box {
+    height: 5rem;
+  }
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 4rem;
+}
+
+.track {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 4rem;
+}
+
+
+.enter-button {
+  background-color: #9768F6;
+  border-radius: 1rem;
+  margin: 0 auto;
+  border: 0;
+  width: 25%;
+  height: 3rem;
+  text-align: center;
+  display: block;
+}
+
+
+h6 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-size: 1.2rem;
+  text-align: center;
+  bottom: 1%;
+  left: 30%;
+  right: 30%;
+  position: fixed;
+}
+
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: gray;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+
+/* SETTINGS */ 
+.settings-box {
+  background-color: #100F0F;
+  border-radius: 1rem;
+  width: 40%;
+  height: 35%;
+  margin: auto;
+  padding: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.settings {
+  height: 2rem;
+  background-color: #ECE1FF;
+  border-radius: 0.3rem;
+}
+
+.email-label {
+  font-size: 0.8rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+.toast-body {
+  color: #040308;
+}
