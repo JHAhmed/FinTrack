@@ -11,6 +11,7 @@ function enterNewID () {
         const finalSplit = fullLinkSplit[1].split("/edit");
         var finalID = finalSplit[0];
         localStorage.setItem('spreadsheetID', finalID);
+
     }
     catch(err){
         console.log(err);

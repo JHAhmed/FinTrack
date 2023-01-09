@@ -32865,16 +32865,13 @@ function extend() {
 
 },{}],244:[function(require,module,exports){
 const { GoogleSpreadsheet } = require("google-spreadsheet");
-const fs = require("fs");
-const json = require("./spreadsheet.json");
-// var spreadsheetID = JSON.parse(fs.readFileSync("spreadsheet.json").toString());
-const docID = localStorage.getItem('spreadsheetID');
-const doc = new GoogleSpreadsheet(docID);
+spreadsheetID = localStorage.getItem('spreadsheetID');
+const doc = new GoogleSpreadsheet(spreadsheetID);
+// const doc = new GoogleSpreadsheet("1ZpuHe3u6zicGuvr7MBz-GZGu2ldRLh5BivoG6UFx1vQ")
 
 function print (toPrint) {
   console.log(toPrint);
 }
-console.log(json.length);
 const enterButton = document.querySelector(".enter-button");
 enterButton.addEventListener("click", GetDetails);
 
@@ -32902,6 +32899,7 @@ function GetDetails() {
   if (category == "Category") {
     category = "Other";
   }
+
   LoadSpreadsheet(amount, inOut, description, date, category);
 }
 
@@ -32935,7 +32933,6 @@ async function LoadCategories (inOut) {
         break
     }
     categories.push(cellValue.value);
-  //   print(`Cell ${cellNumber}: ${cellValue.value}`);
   }
   var categorySelect = document.querySelector(".form-select");
   for (let i = 0; i < categories.length; i++) {
@@ -32945,7 +32942,7 @@ async function LoadCategories (inOut) {
 
 LoadCategories("money-in");
 
-async function LoadSpreadsheet(amount = "1", inOut = "money-out", description = "No Description", date, category) {
+async function LoadSpreadsheet(amount, inOut, description, date, category) {
 
   if (amount == "") {
     amount = 00;
@@ -33016,9 +33013,8 @@ async function LoadSpreadsheet(amount = "1", inOut = "money-out", description = 
   }
 
   await sheet.saveUpdatedCells();
-
 }
-},{"./spreadsheet.json":380,"fs":1,"google-spreadsheet":310}],245:[function(require,module,exports){
+},{"google-spreadsheet":310}],245:[function(require,module,exports){
 "use strict";
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
@@ -92567,6 +92563,4 @@ try {
   require('./iterator.js')(Yallist)
 } catch (er) {}
 
-},{"./iterator.js":378}],380:[function(require,module,exports){
-module.exports="1KbdS2oqMBE-Nl8z5Pp3a5wJqZXIQYzPVcPfavGdausU"
-},{}]},{},[244]);
+},{"./iterator.js":378}]},{},[244]);

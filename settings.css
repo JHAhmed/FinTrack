@@ -25,7 +25,7 @@ h1 {
 }
 
 
-.enter-button {
+.done-button {
   background-color: #9768F6;
   border-radius: 1rem;
   margin: 0 auto;
@@ -48,19 +48,6 @@ h6 {
   right: 30%;
   position: fixed;
 }
-
-a:link {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:visited {
-  color: gray;
-  background-color: transparent;
-  text-decoration: none;
-}
-
 
 /* SETTINGS */ 
 .settings-box {
