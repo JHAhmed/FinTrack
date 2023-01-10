@@ -3,7 +3,9 @@ Use this simple webpage to keep track of your expenses. Go to [Google Spreadshee
 
 ![image](https://user-images.githubusercontent.com/85795507/211553367-7092643a-f535-47c0-9c58-1353270e342b.png)
 
-Download the project files and run it locally as an HTML file. Go to configure settings and paste your spreadsheet link the given field.
+#### You only need to do the following steps once
+
+Download the project files and run it locally as an HTML file. **Go to configure settings and paste your spreadsheet link the given field.**
 Copy the given email address and share your spreadsheet with it.
 
 ![image](https://user-images.githubusercontent.com/85795507/211554128-bf2771ae-aa26-4ea7-8ac5-2d41211f199d.png)
